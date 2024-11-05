@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Card Container and Card Example</title>
+    <!-- Prism.js CSS and JS (for code syntax highlighting) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <style>body{
+        line-height: 1.6;
+    }
+    footer {
+        background-color: #009590;
+        color: #f8f8f2;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footer-content p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    
+    .footer-social-icons {
+        margin: 10px 0;
+    }
+    
+    .footer-social-icons a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    
+    .footer-social-icons img {
+        width: 30px;
+        height: 30px;
+        filter: invert(100%); /* makes the icons white */
+    }
+    
+    .footer-social-icons img:hover {
+        filter: invert(70%); /* subtle hover effect */
+    }
+    
+    footer a {
+        color: #f8f8f2;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    h2{
+        background-color: rgb(0, 174, 255);
+        border-radius: 12px;
+        padding: 0 5px;
+    }
+    h1{
+        background-color: red   ;
+        border-radius: 12px;
+        padding: 0 5px;
+    }
+    button{
+        background-color: #1b1b1b;
+        color: #fff;
+        border: none;
+        padding: 0.7rem 1.7rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color: #ffffff;
+        color: rgb(39, 39, 39);
+        font-size: 1.1rem;
+    }
+    .x{
+        text-decoration: none;
+        background-color: #f8f8f2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        font-size: 1.6rem;
+        padding: 5px 10px;
+    }
+    p{
+        font-size: 1.2rem;
+    }</style>
+</head>
+
+<body>
+    <a href="index.html" class="x">X</a>
+    <h1>How to Create a Card Container and Individual Cards with HTML and CSS</h1>
+
+    <p>In this tutorial, I'll walk you through creating a simple yet attractive card container with individual cards
+        using basic HTML and CSS. Cards are a great way to present content in a clean, organized format, and they are
+        widely used in modern web design for displaying information like products, blog posts, or user profiles.<br>
+        <br>
+        The structure of our card container will consist of a div element that holds multiple card components. Each card
+        will contain an image, a title, and a description. For styling, we will use CSS to add spacing, shadows, and
+        responsive behavior to make the cards look visually appealing.
+    </p>
+
+    <h2>Below is the HTML structure for a basic card container with one card:</h2>
+    <pre><code class="language-html">
+&lt;div class="card-container"&gt;
+    &lt;div class="card"&gt;
+        &lt;img src="image.jpg" alt="Image"&gt;
+        &lt;h3&gt;Card Title&lt;/h3&gt;
+        &lt;p&gt;This is a description of the card.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h2>CSS Code for Styling the Card</h2>
+    <p>For the CSS, we’ll focus on making the cards responsive and adding styles like box shadows, padding, and rounded
+        corners. The card-container will use Flexbox to ensure that the cards are properly aligned and spaced out.
+        Here's the CSS code:</p>
+    <pre><code class="language-css">
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+    </code></pre>
+
+    <p>This CSS will style the cards, making them visually appealing with rounded corners, shadows for depth, and
+        centered content. The cards will resize smoothly on different screen sizes thanks to Flexbox.</p>
+    <h1>Understanding Card Containers and Cards in Web Design</h1>
+    <p>Cards are a widely-used design pattern in web development that help to organize content in a neat and visually
+        appealing way. They are perfect for displaying pieces of content like articles, products, or even user profiles
+        in a modular format. A card container acts as the parent element that holds multiple cards, ensuring proper
+        spacing and layout, especially when using responsive design techniques. Each card typically contains an image, a
+        title, and a brief description, but you can customize this depending on the type of content you're showcasing.
+        By combining HTML and CSS, you can create a clean and flexible card design that adjusts well to different screen
+        sizes, making it a popular choice for modern web applications. <br><br>
+
+        In this guide, I'll show you how to structure a simple card container and individual cards using basic HTML and
+        CSS, as well as how to style them for a professional look that enhances user experience.</p>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <a href="index.html"><button>Back</button></a>
+                    <p>&copy; 2024 Your Blog Name. All rights reserved.</p>
+
+                    <p>Contact us: <a href="mailto:info@yourblog.com">info@yourblog.com</a></p>
+                </div>
+            </div>
+        </footer>
+        
+
+</body>
+
+</html>

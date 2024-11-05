@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        code {
+            color: #d6336c;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+        .back-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .back-button a{
+            background-color: rgb(66, 66, 66);
+            color: #fff;
+            padding: 5px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        .back-button a:hover{
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            z-index: 1000;
+        }
+        .home-button{
+            font-weight: bold;
+            color: rgb(171, 21, 21);
+            font-size: 1.6rem;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: solid #a0a0a0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
+            border-radius: 5px;
+        }
+        .home-button:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="home-button">X</a>
+        <h1>Understanding HTML and CSS: A Beginner’s Guide</h1>
+
+        <p>HTML and CSS are the core technologies used to create and design websites. HTML (HyperText Markup Language) defines the structure of a webpage, while CSS (Cascading Style Sheets) is used to style and layout the page.</p>
+
+        <h2>What is HTML?</h2>
+        <p>HTML is the standard markup language used to create webpages. It consists of a series of elements that define the structure of the content, such as headings, paragraphs, images, links, and more.</p>
+
+        <h3>Basic HTML Structure Explained</h3>
+        <p>Let’s take a look at the basic structure of an HTML document:</p>
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Introduction to HTML and CSS&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to HTML and CSS Tutorial&lt;/h1&gt;
+        &lt;p&gt;This is an example paragraph in HTML.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+        <h3>Explanation of HTML Code</h3>
+        <p>Let’s break down each part of the HTML document:</p>
+
+        <ol>
+            <li><strong>&lt;!DOCTYPE html&gt;:</strong> This declaration defines the document type and version of HTML you are using. For modern websites, this is always <code>&lt;!DOCTYPE html&gt;</code>.</li>
+            <li><strong>&lt;html lang="en"&gt;:</strong> The <code>&lt;html&gt;</code> tag defines the root of the HTML document. The <code>lang="en"</code> attribute specifies the language of the document as English.</li>
+            <li><strong>&lt;head&gt;:</strong> The <code>&lt;head&gt;</code> element contains meta-information about the webpage, such as the character set, viewport settings, and the title.</li>
+            <li><strong>&lt;meta charset="UTF-8"&gt;:</strong> This tag sets the character encoding of the document to UTF-8, which supports almost all characters from different languages.</li>
+            <li><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;:</strong> This tag ensures that the webpage is responsive, meaning it adjusts well on different screen sizes, such as phones, tablets, and desktops.</li>
+            <li><strong>&lt;title&gt;Introduction to HTML and CSS&lt;/title&gt;:</strong> The <code>&lt;title&gt;</code> tag defines the title of the webpage, which is displayed on the browser tab.</li>
+            <li><strong>&lt;body&gt;:</strong> The <code>&lt;body&gt;</code> tag contains the main content of the webpage that users will see.</li>
+            <li><strong>&lt;h1&gt;Welcome to HTML and CSS Tutorial&lt;/h1&gt;:</strong> This is a heading. The <code>&lt;h1&gt;</code> tag defines the largest and most important heading.</li>
+            <li><strong>&lt;p&gt;This is an example paragraph in HTML.&lt;/p&gt;:</strong> This tag defines a paragraph in HTML. All text inside the <code>&lt;p&gt;</code> tag is treated as a paragraph.</li>
+            <li><strong>&lt;/html&gt;:</strong> This closes the HTML document. Every tag that is opened must be closed to ensure proper structure.</li>
+        </ol>
+
+        <h2>What is CSS?</h2>
+        <p>CSS stands for Cascading Style Sheets. It’s used to style and layout webpages. With CSS, you can control the color, font, spacing, size, and positioning of HTML elements.</p>
+
+        <h3>Basic CSS Example</h3>
+        <p>Below is an example of simple CSS that changes the background color of the page and the text color of the heading:</p>
+
+        <pre><code>body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+}</code></pre>
+
+        <h3>Explanation of CSS Code</h3>
+        <p>Here’s what the CSS code does:</p>
+
+        <ol>
+            <li><strong>body:</strong> This selects the entire webpage (the <code>&lt;body&gt;</code>) and sets the background color to a light grey <code>#f0f0f0</code>, and changes the font to Arial.</li>
+            <li><strong>h1:</strong> This selects all <code>&lt;h1&gt;</code> elements on the page and changes the text color to dark grey <code>#333</code>, sets the font size to 32px, and centers the text.</li>
+        </ol>
+
+        <h2>Conclusion</h2>
+        <p>HTML provides the structure of a webpage, while CSS is used to design and style it. By understanding both, you can create beautiful and functional websites. As you learn more about these technologies, you’ll be able to create more complex and visually appealing web pages.</p>
+
+        <div class="footer">
+            <p>© 2024 HTML & CSS Beginner's Guide</p>
+        </div>
+        <div class="back-button">
+            <a href="index.html">Back</a>
+        </div>
+    </div>
+
+</body>
+</html>
